@@ -66,10 +66,10 @@ nav a:hover {
 }
 /* sits inside of the white background, centered */
 .main {
-  max-width: 1200px;
+  max-width: 100%;
   margin-right: 30%;
-  padding: 2rem;
-  display: flex;
+  padding: .05%;
+  display: grid;
   flex-flow: row wrap;
   justify-content: space-between;
 }
@@ -80,12 +80,19 @@ article {
 
 .grid-container {
   display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;      
   gap: 25px 25px;
 }
 
 .grid-item img {
- border-radius: 10px; 
-}
+ border-radius: 10px;
+ background-color: rgba(255, 255, 255, 0.8);
+ border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 25px;
+text-align: left;
+} 
 .button {
   display: inline-block;
   background-color: #59331D;
